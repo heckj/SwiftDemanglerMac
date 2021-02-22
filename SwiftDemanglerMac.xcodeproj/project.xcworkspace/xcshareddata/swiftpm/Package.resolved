@@ -1,0 +1,16 @@
+{
+  "object": {
+    "pins": [
+      {
+        "package": "CwlDemangle",
+        "repositoryURL": "http://github.com/mattgallagher/CwlDemangle",
+        "state": {
+          "branch": null,
+          "revision": "b268c08207d2990664605c49b2c71cbd0df3445b",
+          "version": "0.1.0"
+        }
+      }
+    ]
+  },
+  "version": 1
+}

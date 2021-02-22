@@ -3,7 +3,7 @@
 	archiveVersion = 1;
 	classes = {
 	};
-	objectVersion = 50;
+	objectVersion = 52;
 	objects = {
 
 /* Begin PBXBuildFile section */
@@ -11,9 +11,11 @@
 		1A5DDD0A25E430FB007BE64B /* ContentView.swift in Sources */ = {isa = PBXBuildFile; fileRef = 1A5DDD0925E430FB007BE64B /* ContentView.swift */; };
 		1A5DDD0C25E430FB007BE64B /* Assets.xcassets in Resources */ = {isa = PBXBuildFile; fileRef = 1A5DDD0B25E430FB007BE64B /* Assets.xcassets */; };
 		1A5DDD0F25E430FB007BE64B /* Preview Assets.xcassets in Resources */ = {isa = PBXBuildFile; fileRef = 1A5DDD0E25E430FB007BE64B /* Preview Assets.xcassets */; };
+		1A5DDD1A25E43128007BE64B /* CwlDemangle in Frameworks */ = {isa = PBXBuildFile; productRef = 1A5DDD1925E43128007BE64B /* CwlDemangle */; };
 /* End PBXBuildFile section */
 
 /* Begin PBXFileReference section */
+		1A3B91B525E4322C0062BA72 /* README.md */ = {isa = PBXFileReference; lastKnownFileType = net.daringfireball.markdown; path = README.md; sourceTree = "<group>"; };
 		1A5DDD0425E430FB007BE64B /* SwiftDemanglerMac.app */ = {isa = PBXFileReference; explicitFileType = wrapper.application; includeInIndex = 0; path = SwiftDemanglerMac.app; sourceTree = BUILT_PRODUCTS_DIR; };
 		1A5DDD0725E430FB007BE64B /* SwiftDemanglerMacApp.swift */ = {isa = PBXFileReference; lastKnownFileType = sourcecode.swift; path = SwiftDemanglerMacApp.swift; sourceTree = "<group>"; };
 		1A5DDD0925E430FB007BE64B /* ContentView.swift */ = {isa = PBXFileReference; lastKnownFileType = sourcecode.swift; path = ContentView.swift; sourceTree = "<group>"; };
@@ -28,6 +30,7 @@
 			isa = PBXFrameworksBuildPhase;
 			buildActionMask = 2147483647;
 			files = (
+				1A5DDD1A25E43128007BE64B /* CwlDemangle in Frameworks */,
 			);
 			runOnlyForDeploymentPostprocessing = 0;
 		};
@@ -37,6 +40,7 @@
 		1A5DDCFB25E430FA007BE64B = {
 			isa = PBXGroup;
 			children = (
+				1A3B91B525E4322C0062BA72 /* README.md */,
 				1A5DDD0625E430FB007BE64B /* SwiftDemanglerMac */,
 				1A5DDD0525E430FB007BE64B /* Products */,
 			);
@@ -87,6 +91,9 @@
 			dependencies = (
 			);
 			name = SwiftDemanglerMac;
+			packageProductDependencies = (
+				1A5DDD1925E43128007BE64B /* CwlDemangle */,
+			);
 			productName = SwiftDemanglerMac;
 			productReference = 1A5DDD0425E430FB007BE64B /* SwiftDemanglerMac.app */;
 			productType = "com.apple.product-type.application";
@@ -114,6 +121,9 @@
 				Base,
 			);
 			mainGroup = 1A5DDCFB25E430FA007BE64B;
+			packageReferences = (
+				1A5DDD1825E43128007BE64B /* XCRemoteSwiftPackageReference "CwlDemangle" */,
+			);
 			productRefGroup = 1A5DDD0525E430FB007BE64B /* Products */;
 			projectDirPath = "";
 			projectRoot = "";
@@ -329,6 +339,25 @@
 			defaultConfigurationName = Release;
 		};
 /* End XCConfigurationList section */
+
+/* Begin XCRemoteSwiftPackageReference section */
+		1A5DDD1825E43128007BE64B /* XCRemoteSwiftPackageReference "CwlDemangle" */ = {
+			isa = XCRemoteSwiftPackageReference;
+			repositoryURL = "http://github.com/mattgallagher/CwlDemangle";
+			requirement = {
+				kind = upToNextMajorVersion;
+				minimumVersion = 0.1.0;
+			};
+		};
+/* End XCRemoteSwiftPackageReference section */
+
+/* Begin XCSwiftPackageProductDependency section */
+		1A5DDD1925E43128007BE64B /* CwlDemangle */ = {
+			isa = XCSwiftPackageProductDependency;
+			package = 1A5DDD1825E43128007BE64B /* XCRemoteSwiftPackageReference "CwlDemangle" */;
+			productName = CwlDemangle;
+		};
+/* End XCSwiftPackageProductDependency section */
 	};
 	rootObject = 1A5DDCFC25E430FA007BE64B /* Project object */;
 }
